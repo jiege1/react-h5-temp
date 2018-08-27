@@ -63,6 +63,33 @@ module.exports = (config) => {
             name: IS_DEV ? '[path][name].[ext]' : 'assets/[name].[ext]',
           }
         },
+        {
+          test: /\.mp3$/,
+          exclude: /node_modules/,
+          loader: 'file-loader',
+          query: {
+            // mp4目录
+            name: IS_DEV ? '[path][name].[ext]' : 'assets/audio/[hash].[ext]',
+          }
+        },
+        {
+          test: /\.mp4$/,
+          exclude: /node_modules/,
+          loader: 'file-loader',
+          query: {
+            // mp4目录
+            name: IS_DEV ? '[path][name].[ext]' : 'assets/video/[hash].[ext]',
+          }
+        },
+        {
+          test: /\.ttf$/,
+          exclude: /node_modules/,
+          loader: 'file-loader',
+          query: {
+            // mp4目录
+            name: IS_DEV ? '[path][name].[ext]' : 'assets/font/[hash].[ext]',
+          }
+        },
       ]
     }
   };
