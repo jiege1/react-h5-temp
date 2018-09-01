@@ -4,7 +4,7 @@ import ReactDom from 'react-dom';
 import Layout from './layout';
 import './index.less';
 
-console.log('环境变量：', process.env);
+console.log('环境变量：', process.env.NODE_ENV);
 
 ReactDom.render(
   <Layout />,

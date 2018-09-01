@@ -4,7 +4,7 @@
   "description": "前端项目",
   "main": "src/index.js",
   "scripts": {
-    "test": "npm test"
+    "lint": "./node_modules/.bin/eslint --fix src"
   },
   "author": "",
   "license": "ISC",
@@ -52,6 +52,10 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0"
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "eslint": "^5.4.0",
+    "eslint-import-resolver-webpack": "^0.10.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-react": "^7.11.1"
   }
 }
