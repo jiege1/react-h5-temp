@@ -13,12 +13,12 @@ export default class Layout extends React.Component {
     this.state = {};
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+  }
 
   render() {
     return (
       <div className={css.layout}>
-        <span>123</span>
         react-h5-temp
       </div>
     );
