@@ -1,26 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import css from './index.less';
+import Hooks from 'common/hooks';
 
-export default class Layout extends React.Component {
-
-  static propTypes = {};
-
-  static defaultProps = {};
-
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  componentDidMount() {
-  }
-
-  render() {
-    return (
-      <div className={css.layout}>
-        react-h5-temp
-      </div>
-    );
-  }
+function Layout() {
+  
+  Hooks.useDidMount(() => {
+    console.log('componentDidMount!');
+  });
+  
+  return (
+    <div className={css.layout}>
+      react-h5-temp
+    </div>
+  );
 }
+
+Layout.propTypes = {};
+
+Layout.defaultProps = {};
+
+export default Layout;
